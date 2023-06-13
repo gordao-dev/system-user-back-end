@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "lib": ["es2015"],
+    "target": "es6",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": false,
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "paths": {
+      "@Modules/*": ["Modules/*"],
+      "@Shared/*": ["Shared/*"]
+    },
+    "module": "commonjs",
+    "typeRoots": ["./src/Shared/@Types", "./node_modules/@types"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
